@@ -1,0 +1,187 @@
+    .btn-menu label{
+		color: #ffffff;
+		font-size: 16px;
+		cursor: pointer;
+        width: 75px;
+        height: 40px;
+        padding-top: 8px;
+	}
+	.btn-menu label:hover{
+		color: #2634ff;
+        transition: all 0.2s;
+	}
+
+    .btn-menu2 label{
+		color: #0A58D4;
+		font-size: 16px;
+		cursor: pointer;
+        width: 75px;
+        height: 40px;
+        padding-top: 8px;
+	}
+    .btn-menu2 .bi{
+        color: #0A58D4;
+    }
+    .cont3{
+        width: 100px;
+        display: grid;
+        place-items: center;
+    }
+
+	/*Menú lateral*/
+	#btn-menu{
+		display: none;
+	}
+    .btn-menu{
+        color: #fff;
+    }
+	.container-menu{
+		position: absolute;
+		background: rgba(0, 0, 0, 0.5);
+		width: 100%;
+		height:120vh;
+		top: 0;left: 0;
+		transition: all 500ms ease;
+		opacity: 0;
+		visibility: hidden;
+        z-index: 99;
+	}
+	#btn-menu:checked ~ .container-menu{
+		opacity: 1;
+		visibility: visible;
+	}
+	.cont-menu{
+		width: 100%;
+		max-width: 300px;
+		background: #ffffff;
+		height: 120vh;
+		position: relative;
+		transition: all 500ms ease;
+		transform: translateX(-100%);
+        border: solid 2px #3e92ff;
+	}
+	#btn-menu:checked ~ .container-menu .cont-menu{
+		transform: translateX(0%);
+	}
+	.cont-menu label{
+		position: absolute;
+		right: 5px;
+		top: 10px;
+		color: #fff;
+		cursor: pointer;
+		font-size: 18px;
+	}
+
+/*contenido carrito*/
+.banner2{
+    background: rgb(121, 179, 255);
+    color: #fff;
+    height: 80px;
+    display: grid;
+    place-content: center;
+}
+
+.delete{
+    position: absolute;
+    color: #fff;
+}
+
+.bxproduct{
+    display: grid;
+    place-content: center;
+    margin-top: 20px;
+}
+
+/*tarjeta*/
+.card3 {
+    width: 190px;
+    height: 274px;
+    background: white;
+    padding: .4em;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+  }
+  
+  .card-image {
+    background-color: rgb(236, 236, 236);
+    width: 100%;
+    height: 60%;
+    border-radius: 6px 6px 0 0;
+  }
+  
+  .card-image:hover {
+    transform: scale(0.98);
+  }
+  .card-image2 {
+    background-color: rgb(236, 236, 236);
+    width: 100%;
+    height: 60%;
+    border-radius: 6px 6px 0 0;
+  }
+  
+  .card-image2:hover {
+    transform: scale(0.98);
+  }
+  .card-image3 {
+    background-color: rgb(236, 236, 236);
+    width: 100%;
+    height: 60%;
+    border-radius: 6px 6px 0 0;
+  }
+  
+  .card-image3:hover {
+    transform: scale(0.98);
+  }
+  
+  .category {
+    text-transform: uppercase;
+    font-size: 0.7em;
+    font-weight: 600;
+    color: rgb(63, 121, 230);
+    padding: 10px 7px 0;
+  }
+  
+  .category:hover {
+    cursor: pointer;
+  }
+  
+  .heading {
+    font-weight: 600;
+    color: rgb(88, 87, 87);
+    padding: 7px;
+  }
+  
+  .heading:hover {
+    cursor: pointer;
+  }
+  
+  .author {
+    color: gray;
+    font-weight: 400;
+    font-size: 11px;
+    padding-top: 10px;
+  }
+  
+  .name {
+    font-weight: 600;
+  }
+  
+  .name:hover {
+    cursor: pointer;
+  }
+  .card-image{
+    background-image: url("Images/base_cama.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .card-image2{
+    background-image: url("Images/salas.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .card-image3{
+    background-image: url("Images/comedor.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sesion.css">
+    <title>R. SAVILLA SAS</title>
+</head>
+<body>
+    <section>
+      <div class="wrapper__area" id="wrapper_Area">
+        <div class="forms__area">
+          <form class="login__form" id="loginForm">
+            <h1 class="form__title">Savilla SAS</h1>
+            <div class="input__group">
+              <label class="field">
+                <input type="text" name="username" placeholder="Usuario" id="loginUsername">
+              </label>
+              <span class="input__icon"><i class="bx bx-user"></i></span>
+              <small class="input__error_message"></small>
+            </div>
+            <div class="input__group">
+              <label class="field">
+                <input type="password" name="password" placeholder="Contraseña" id="loginPassword">
+              </label>
+              <span class="input__icon"><i class="bx bx-lock"></i></span>
+              <span class="showHide__Icon"><i class="bx bx-hide"></i></span>
+              <small class="input__error_message"></small>
+            </div>
+            <div class="form__actions">
+              <label for="checkboxInput" class="remeber_me">
+                <input type="checkbox" id="checkboxInput">
+                <span class="checkmark"></span>
+                <span>Recordar</span>
+              </label>
+              <div class="forgot_password">Olvidé mi contraseña</div>
+            </div>
+            <button type="submit" class="submit-button" id="loginSubmitBtn">Ingresar</button>
+            <div class="alternate-login">
+              <div class="link">
+                <i class='bx bxl-google'></i>
+                <span>Google</span>
+              </div>
+              <div class="link">
+                <i class='bx bxl-facebook-circle'></i>
+                <span>Facebook</span>
+              </div>
+            </div>
+          </form>
+          
+          <form class="sign-up__form" id="signUpForm">
+            <h1 class="form__title">Registrate!</h1>
+            <div class="input__group">
+              <label class="field">
+                <input type="text" name="username" placeholder="Usuario123..." id="signUpUsername">
+              </label>
+              <span class="input__icon"><i class="bx bx-user"></i></span>
+              <small class="input__error_message"></small>
+            </div>
+            <div class="input__group">
+              <label class="field">
+                <input type="text" name="email" placeholder="Email@ejemplo.com" id="signUpEmail">
+              </label>
+              <span class="input__icon"><i class="bx bx-at"></i></span>
+              <small class="input__error_message"></small>
+            </div>
+            <div class="input__group">
+              <label class="field">
+                <input type="password" name="password" placeholder="Contraseña" id="signUpPassword">
+              </label>
+              <span class="input__icon"><i class="bx bx-lock"></i></span>
+              <span class="showHide__Icon"><i class="bx bx-hide"></i></span>
+              <small class="input__error_message"></small>
+            </div>
+            <div class="input__group confirm__group">
+              <label class="field">
+                <input type="password" name="confirm_password" placeholder="Confirmar Contraseña" id="signUpConfirmPassword">
+              </label>
+              <span class="input__icon"><i class="bx bx-lock"></i></span>
+              <span class="showHide__Icon"><i class="bx bx-hide"></i></span>
+              <small class="input__error_message"></small>
+            </div>
+            <button type="submit" class="submit-button" id="signUpSubmitBtn">Crear</button>
+            <div class="alternate-login">
+              <div class="link">
+                <i class='bx bxl-google'></i>
+                <span>Google</span>
+              </div>
+              <div class="link">
+                <i class='bx bxl-facebook-circle'></i>
+                <span>Facebook</span>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div class="aside__area" id="aside_Area">
+          <div class="login__aside-info">
+            <h4>Bienvenido</h4>
+            <img src="https://d.top4top.io/p_1945xjz2y1.png" alt="Image">
+            <p>Registra tus datos para crear una experiencia única</p>
+            <button id="aside_signUp_Btn">Crear Cuenta</button>
+            <br>
+            <button onclick="location.href='index.html'" id="aside_signUp_Btn">Volver a Inicio</button>
+          </div>
+          <div class="sign-up__aside-info">
+            <h4>Bienvenido</h4>
+            <img src="https://e.top4top.io/p_1945sidbp2.png" alt="Image">
+            <p>Ingresa con tu información personal si cuentas con perfil</p>
+            <button id="aside_signIn_Btn">Iniciar sesión</button>
+            <br>
+            <button onclick="location.href='index.html'" id="aside_signIp_Btn">Volver a Inicio</button>
+          </div>
+        </div>
+      </div>
+    </section>
+</body>
+  <script src="sesion.js"></script>
+</html>

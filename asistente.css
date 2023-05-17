@@ -1,0 +1,160 @@
+.fas fa-atom
+{
+ font-size:20px;
+ float:center;
+}
+.fas fa-laptop-code
+{
+  font-size:36px;
+ float:left;
+}
+.fas fa-book
+{
+  font-size:30px;
+}
+.right
+{
+  float:right;
+}
+.tutorials
+{
+  font-size:15px;
+  float:left;
+}
+.float{
+    position:fixed;
+    width:50px;
+    height:50px;
+    bottom:40px;
+    right:10px;
+    background-color:rgb(45, 136, 255);
+    color:black;
+    border-radius:50px;
+    text-align:center;
+    cursor: pointer;
+    padding-top: 4px;
+	box-shadow: 2px 2px 3px ;
+	animation: bot-to-top 2s ease-out;
+}
+.asis{
+    width: 40px;
+}
+
+/*Popup de chat*/
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 15px;
+  border-radius: 20px;
+  z-index: 3;
+}
+.form-container {
+  max-width: 300px;
+  height: 600px;
+  padding: 10px;
+  background: linear-gradient(#2a63ff, #ffffff);
+  border-radius: 20px;
+  color: #fff;
+}
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  border-radius: 10px;
+  background: rgb(255, 255, 255);
+  resize: none;
+  min-height: 150px;
+}
+.chat{
+    padding-bottom: 50px;
+}
+.form-container textarea:focus {
+  background-color: white;
+  outline: none;
+}
+.form-container .btn {
+  background-color: lightgreen;
+  color:black ;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+.form-container .cancel {
+  background-color:rgb(255, 107, 107);
+}
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+/*buscar*/
+.input {
+    font-weight: 500;
+    font-size: 14px;
+    height: 40px;
+    width: 280px;
+    border-radius: 10px;
+    padding-left: 10px;
+    border: none;
+    border-bottom: 1px solid #e5e5e5;
+    outline: none;
+  }
+  
+  .input:focus {
+    border-bottom: 1px solid #6941c6;
+    -webkit-transition: 0.1s;
+    transition: 0.5s;
+  }
+
+/*boton*/
+.botn {
+    position: relative;
+    font-size: 15px;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 6em;
+    transition: all .2s;
+    border: none;
+    font-family: inherit;
+    color: black;
+    background-color: white;
+    height: 30px;
+    width: 280px;
+    margin-top: 5px;
+   }
+   
+   .botn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+   }
+   
+   .botn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+   }
+   
+   .botn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+   }
+   
+   .botn::after {
+    background-color: #fff;
+   }
+   
+   .botn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+   }
